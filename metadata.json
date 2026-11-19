@@ -1,0 +1,6 @@
+{
+  "name": "Misi Jelajah Budaya",
+  "description": "Permainan pengembaraan pendidikan Pixel Art 8-bit untuk murid sekolah rendah menguasai sembilan jenis kata adjektif Bahasa Melayu melalui budaya Malaysia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
