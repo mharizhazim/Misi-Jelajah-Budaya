@@ -6,10 +6,13 @@ import {
   Stage3Question,
 } from '../types/game';
 
+const asset = (filename: string) =>
+  `${import.meta.env.BASE_URL}src/assets/images/${filename}`;
+
 export const MEDAN_PENDEKAR_SECRET_CODE = 'MJB-RM-2026-MUSTAFAR';
 
 export const SCENE_IMAGES = {
-  tropicalBackdrop: '/src/assets/images/pixel_tropical_backdrop_1795018818194.jpg',
+  tropicalBackdrop: asset('pixel_tropical_backdrop_1795018818194.jpg'),
   worldMap: '/src/assets/images/pixel_world_map_1795018820107.jpg',
 };
 
@@ -23,7 +26,7 @@ export const AVATARS: AvatarItem[] = [
     attire: 'Baju Melayu tradisional, kain pelikat dan tengkolok.',
     specialTrait: 'Tekun, mesra dan bersemangat tinggi.',
     description: 'Penduduk kampung yang memulakan pengembaraan menjelajah warisan budaya.',
-    imageUrl: '/src/assets/images/avatar_orang_kampung_1795018821111.jpg',
+    imageUrl: asset('avatar_orang_kampung_1795018822132.jpg'),
     accentColor: '#0F766E',
   },
   {
@@ -35,7 +38,7 @@ export const AVATARS: AvatarItem[] = [
     attire: 'Pakaian pengembaraan berwarna merah, kain samping dan tanjak merah.',
     specialTrait: 'Kecil tetapi berani dan bijak.',
     description: 'Wira kecil daripada cerita rakyat yang mempunyai semangat pengembaraan yang membara.',
-    imageUrl: '/src/assets/images/avatar_awang_kenit_1795018821635.jpg',
+    imageUrl: asset('avatar_awang_kenit_1795018822132.jpg'),
     accentColor: '#B91C1C',
   },
   {
@@ -47,7 +50,7 @@ export const AVATARS: AvatarItem[] = [
     attire: 'Pakaian pendekar tradisional bersama keris dan ikat pinggang emas.',
     specialTrait: 'Kuat dan gagah.',
     description: 'Pendekar legenda yang mempunyai kekuatan luar biasa untuk menjaga keamanan kampung.',
-    imageUrl: '/src/assets/images/avatar_badang_1795018822132.jpg',
+    imageUrl: asset('avatar_badang_1795018822132.jpg'),
     accentColor: '#1E3A8A',
   },
   {
@@ -59,7 +62,7 @@ export const AVATARS: AvatarItem[] = [
     attire: 'Makhluk fantasi besar berwarna hijau berhias dedaun dan perisai rimba.',
     specialTrait: 'Kuat, garang tetapi boleh menjadi pelindung.',
     description: 'Penjaga kawasan hutan tropika dan khazanah warisan Nusantara yang setia.',
-    imageUrl: '/src/assets/images/avatar_raksasa_1795018822742.jpg',
+    imageUrl: asset('avatar_raksasa_1795018822132.jpg'),
     accentColor: '#15803D',
   },
   {
@@ -71,7 +74,7 @@ export const AVATARS: AvatarItem[] = [
     attire: 'Busana diraja Melayu, tengkolok emas, keris diraja dan songket mewah.',
     specialTrait: 'Avatar paling hebat dan paling berprestij.',
     description: 'Raja bijaksana yang memerintah kerajaan budaya Nusantara dengan adil.',
-    imageUrl: '/src/assets/images/avatar_raja_mustafar_1795018822926.jpg',
+    imageUrl: asset('avatar_raja_mustafar_1795018822132.jpg'),
     accentColor: '#B45309',
   },
 ];
@@ -266,7 +269,7 @@ export const STAGE_2_QUESTIONS: Stage2Question[] = [
   {
     id: 's2-q1',
     title: 'Soalan 1: Wau Bulan',
-    imageUrl: '/src/assets/images/pixel_wau_bulan_1795018822666.jpg',
+    imageUrl: asset('avatar_wau_bulan_1795018822132.jpg'),
     imageAlt: 'Ilustrasi Pixel Art Wau Bulan tradisional Malaysia terbang di langit biru',
     sentence: 'Wau bulan itu mempunyai bentuk yang ______.',
     options: ['Merdu', 'Melengkung', 'Harum'],
@@ -280,7 +283,7 @@ export const STAGE_2_QUESTIONS: Stage2Question[] = [
   {
     id: 's2-q2',
     title: 'Soalan 2: Kain Songket',
-    imageUrl: '/src/assets/images/pixel_kain_songket_1795018823995.jpg',
+    imageUrl: asset('avatar_kain_songket_1795018822132.jpg'),
     imageAlt: 'Ilustrasi Pixel Art Kain Songket tenunan benang emas di atas rak kayu berukir',
     sentence: 'Kain songket itu kelihatan ______ apabila terkena cahaya.',
     options: ['Berkilau', 'Jauh', 'Masam'],
@@ -294,7 +297,7 @@ export const STAGE_2_QUESTIONS: Stage2Question[] = [
   {
     id: 's2-q3',
     title: 'Soalan 3: Persembahan Kompang',
-    imageUrl: '/src/assets/images/pixel_kompang_1795018824262.jpg',
+    imageUrl: asset('avatar_kompang_1795018822132.jpg'),
     imageAlt: 'Ilustrasi Pixel Art sekumpulan pemain kompang memakai baju Melayu di halaman kampung',
     sentence: 'Bunyi kompang yang dimainkan oleh kumpulan itu sangat ______.',
     options: ['Pahit', 'Tinggi', 'Merdu'],
@@ -308,7 +311,7 @@ export const STAGE_2_QUESTIONS: Stage2Question[] = [
   {
     id: 's2-q4',
     title: 'Soalan 4: Makanan Tradisional',
-    imageUrl: '/src/assets/images/pixel_kuih_dodol_1795018824285.jpg',
+    imageUrl: asset('avatar_kuih_dodol_1795018822132.jpg'),
     imageAlt: 'Ilustrasi Pixel Art kuih dodol di atas daun pisang dan pinggan seramik warisan',
     sentence: 'Dodol merupakan makanan tradisional yang mempunyai rasa ______.',
     options: ['Manis', 'Kasar', 'Jauh'],
@@ -322,7 +325,7 @@ export const STAGE_2_QUESTIONS: Stage2Question[] = [
   {
     id: 's2-q5',
     title: 'Soalan 5: Rumah Tradisional Melayu',
-    imageUrl: '/src/assets/images/pixel_rumah_melayu_1795018824560.jpg',
+    imageUrl: asset('avatar_rumah_melayu_1795018822132.jpg'),
     imageAlt: 'Ilustrasi Pixel Art rumah kayu tradisional Melayu bertiang tinggi dengan tangga berukir',
     sentence: 'Rumah tradisional Melayu itu mempunyai tiang yang ______.',
     options: ['Harum', 'Tinggi', 'Gembira'],
@@ -643,7 +646,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-b-q1',
       title: 'Soalan 1: Wau Bulan di Angkasa',
-      imageUrl: '/src/assets/images/pixel_wau_bulan_1795018822666.jpg',
+      imageUrl: asset('avatar_wau_bulan_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art Wau Bulan tradisional Malaysia terbang di langit biru',
       sentence: 'Langit di belakang wau bulan itu berwarna ______.',
       options: ['Merdu', 'Manis', 'Biru'],
@@ -657,7 +660,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-b-q2',
       title: 'Soalan 2: Tenunan Kain Songket',
-      imageUrl: '/src/assets/images/pixel_kain_songket_1795018823995.jpg',
+      imageUrl: asset('avatar_kain_songket_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art Kain Songket tenunan benang emas di atas rak kayu berukir',
       sentence: 'Benang pada kain songket diraja itu ditenun menggunakan warna ______.',
       options: ['Masam', 'Keemasan', 'Perlahan'],
@@ -671,7 +674,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-b-q3',
       title: 'Soalan 3: Pesta Kompang Kampung',
-      imageUrl: '/src/assets/images/pixel_kompang_1795018824262.jpg',
+      imageUrl: asset('avatar_kompang_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art sekumpulan pemain kompang memakai baju Melayu di halaman kampung',
       sentence: 'Suasana di halaman kampung semasa persembahan kompang kelihatan sangat ______.',
       options: ['Meriah', 'Pahit', 'Lonjong'],
@@ -685,7 +688,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-b-q4',
       title: 'Soalan 4: Kuih Dodol Warisan',
-      imageUrl: '/src/assets/images/pixel_kuih_dodol_1795018824285.jpg',
+      imageUrl: asset('avatar_kuih_dodol_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art kuih dodol di atas daun pisang dan pinggan seramik warisan',
       sentence: 'Tekstur kuih dodol yang baru dimasak itu terasa ______ apabila disentuh.',
       options: ['Jauh', 'Lembut', 'Merdu'],
@@ -699,7 +702,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-b-q5',
       title: 'Soalan 5: Rumah Kayu Melayu',
-      imageUrl: '/src/assets/images/pixel_rumah_melayu_1795018824560.jpg',
+      imageUrl: asset('avatar_rumah_melayu_1795018822132.jpg'),,
       imageAlt: 'Ilustrasi Pixel Art rumah kayu tradisional Melayu bertiang tinggi dengan tangga berukir',
       sentence: 'Rumah kayu tradisional Melayu itu dibina daripada papan yang ______ dan kukuh.',
       options: ['Tebal', 'Manis', 'Lewat'],
@@ -715,7 +718,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-c-q1',
       title: 'Soalan 1: Awan dan Wau Bulan',
-      imageUrl: '/src/assets/images/pixel_wau_bulan_1795018822666.jpg',
+      imageUrl: asset('avatar_wau_bulan_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art Wau Bulan tradisional Malaysia terbang di langit biru',
       sentence: 'Awan putih yang melintasi wau bulan di langit itu kelihatan sangat ______.',
       options: ['Pahit', 'Gebu', 'Pantas'],
@@ -729,7 +732,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-c-q2',
       title: 'Soalan 2: Permukaan Kain Songket',
-      imageUrl: '/src/assets/images/pixel_kain_songket_1795018823995.jpg',
+      imageUrl: asset('avatar_kain_songket_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art Kain Songket tenunan benang emas di atas rak kayu berukir',
       sentence: 'Permukaan kain songket tenunan tangan itu berasa sedikit ______ kerana sulaman benang emas.',
       options: ['Awal', 'Jauh', 'Kasar'],
@@ -743,7 +746,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-c-q3',
       title: 'Soalan 3: Rentak Pemain Kompang',
-      imageUrl: '/src/assets/images/pixel_kompang_1795018824262.jpg',
+      imageUrl: asset('avatar_kompang_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art sekumpulan pemain kompang memakai baju Melayu di halaman kampung',
       sentence: 'Pemain kompang itu memukul kompang dengan rentak yang ______.',
       options: ['Masin', 'Pantas', 'Bulat'],
@@ -757,7 +760,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-c-q4',
       title: 'Soalan 4: Potongan Kuih Dodol',
-      imageUrl: '/src/assets/images/pixel_kuih_dodol_1795018824285.jpg',
+      imageUrl: asset('avatar_kuih_dodol_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art kuih dodol di atas daun pisang dan pinggan seramik warisan',
       sentence: 'Kuih dodol itu dipotong menjadi bentuk ______ di atas daun pisang.',
       options: ['Segi empat', 'Merdu', 'Harum'],
@@ -771,7 +774,7 @@ export const STAGE_2_QUESTION_SETS: Stage2Question[][] = [
     {
       id: 's2-c-q5',
       title: 'Soalan 5: Bunga Raya di Halaman Rumah',
-      imageUrl: '/src/assets/images/pixel_rumah_melayu_1795018824560.jpg',
+      imageUrl: asset('avatar_rumah_melayu_1795018822132.jpg'),
       imageAlt: 'Ilustrasi Pixel Art rumah kayu tradisional Melayu bertiang tinggi dengan tangga berukir',
       sentence: 'Bunga raya yang mekar di hadapan rumah kampung itu berwarna ______.',
       options: ['Lewat', 'Merdu', 'Merah'],
